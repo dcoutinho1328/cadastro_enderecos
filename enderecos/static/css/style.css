@@ -1,0 +1,156 @@
+body{
+    background-color:rgb(197, 196, 196);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+#header{
+    background-color: black;
+    width:100%;
+    height: fit-content;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+#body-text{
+    text-align: center;
+    font-size:30px;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color:  white;
+    margin: 15px;
+}
+
+.celulas{
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    max-width: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(83, 83, 83);
+    border-width: 2px;
+    border-color:  rgb(0, 0, 0);
+    border-style: solid;
+    word-wrap:break-word;
+    text-align:center;
+}
+
+.data{
+    padding: 10px;
+    margin: 15px;
+    font-size: 15px;
+    max-width: 200px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(138, 138, 138);
+    border-width: 2px;
+    border-color:  rgb(0, 0, 0);
+    border-style: solid;
+    word-wrap:break-word;
+    text-align:center;
+}
+
+table{
+    margin: auto;
+}
+
+#criar_novo{
+    display: block;
+    background-color: rgb(90, 90, 90);
+    color:rgb(255, 255, 255);
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#end_form{
+    text-align: center;
+    margin: auto;
+}
+
+#formulario{
+}
+
+#form_area{
+    margin: auto;
+    width: fit-content;
+}
+.form-lines{
+    margin-top: 20px;
+    text-align: left;
+    list-style: none;
+    width: 400px;
+    margin-right: 0px;
+    height: fit-content;
+    padding:10px;
+}
+
+.input_name{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 15px;
+    position: relative;
+    align-self: start;
+}
+.inputs{
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+    color: black;
+    border-style: none;
+    padding: 3px;
+}
+#search{
+    background-color:  rgb(90, 90, 90);
+    color:rgb(255, 255, 255);
+    margin-left: 15px;
+    border-radius: 5px;
+    border-style:none;
+    padding: 5px;
+    align-self: flex-end;
+}
+
+#log{
+    width:65%;
+}
+
+#num{
+    width:20%;
+}
+
+#comp{
+    width:20%;
+}
+#desc{
+    width:65%;
+}
+
+#cep{
+    width:100px;
+}
+
+#finish{
+    align-self: center;
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
