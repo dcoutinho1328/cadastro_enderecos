@@ -1,9 +1,7 @@
 # cadastro_enderecos
 Sistema de cadastro de endereços a partir de CEP criado com a framework Django.
 
-'''
 Linguagens utilizadas: HTML, CSS, Python, Javascript
-'''
 
 # Pré Requisitos 
 - Certifique-se de ter uma versão do python instalada na máquina
