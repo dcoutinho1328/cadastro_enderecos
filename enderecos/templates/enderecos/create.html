@@ -1,0 +1,61 @@
+{% extends 'enderecos/base.html' %}
+{% block content %}
+    <div id='body-text'>
+        <h2>Cadastrar Novo CEP</h2>
+    </div>
+
+    <div id='form_area'>    
+        <form id = 'end_form' method="POST">
+            {% csrf_token %}
+
+            <ul id='formulario'>
+                <li class ='form-lines'>
+                    <label class = 'input_name'>CEP:</label>
+                    <input class = 'inputs' id='cep' type="text" name="cep" onKeyPress="MascaraCep(this);" maxlength="9" value='{{novoend.cep}}' required>
+                    <button id = 'search' type="submit" name='pesquisar' value="pesquisar" onmousemove="botao_passar(this)" onmouseout="botao_sair(this)">Pesquisar</button>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Logradouro:</label>
+                    <input class = 'inputs' id = 'log' type="text" name="logradouro" value='{{novoend.endereco}}' {{novoend.readonly_in}} {{novoend.required}}>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Número:</label>
+                    <input class = 'inputs' id = 'num' type="text" name="numero" {{novoend.required}} value='{{novoend.numero}}'>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Complemento:</label>
+                    <input class = 'inputs' id = 'comp' type="text" name="complemento" value='{{novoend.complemento}}'>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Bairro:</label>
+                    <input class = 'inputs' id = 'log' type="text" name="bairro" value='{{novoend.bairro}}' {{novoend.required}}>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Cidade:</label>
+                    <input class = 'inputs' id = 'log' type="text" name="cidade" value='{{novoend.cidade}}' {{novoend.readonly_in}} {{novoend.required}}>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>UF:</label>
+                    <input class = 'inputs' id = 'uf' type="text" name="uf" value='{{novoend.uf}}' {{novoend.readonly_in}} {{novoend.required}}>
+                </li>
+
+                <li class ='form-lines'>
+                    <label class = 'input_name'>Descricao:</label>
+                    <input class = 'inputs' id = 'desc' type="text" name="desc" value='{{novoend.desc}}'>
+                </li>
+                
+
+            </ul>
+
+            <button id = 'finish' type="submit" name='enviar' value="cadastrar" {{novoend.disable_but}} onmousemove="botao_passar(this)" onmouseout="botao_sair(this)">Cadastrar</button>            
+            
+        </form>
+    </div>
+    
+{% endblock content %}

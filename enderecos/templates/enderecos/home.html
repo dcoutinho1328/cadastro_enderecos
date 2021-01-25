@@ -1,0 +1,38 @@
+{% extends 'enderecos/base.html' %}
+{% block content %}
+    <div id='body-text'>
+        <h2>Ceps Cadastrados</h2>
+    </div>
+
+    <table id='CEPS'>
+        <thead>
+            <td class='celulas'>CEP</td>
+            <td class='celulas'>LOGRADOURO</td>
+            <td class='celulas'>NÚMERO</td>
+            <td class='celulas'>COMPLEMENTO</td>
+            <td class='celulas'>BAIRRO</td>
+            <td class='celulas'>CIDADE</td>
+            <td class='celulas'>UF</td>
+            <td class='celulas'>DESCRIÇÃO</td>
+        </thead>
+
+
+        <tbody>
+            {% for endereco in address %}
+            <tr>
+                <td class='data'>{{endereco.cep}}</td>
+                <td class='data'>{{endereco.logradouro}}</td>
+                <td class='data'>{{endereco.numero}}</td>
+                <td class='data'>{{endereco.complemento}}</td>
+                <td class='data'>{{endereco.bairro}}</td>
+                <td class='data'>{{endereco.cidade}}</td>
+                <td class='data'>{{endereco.uf}}</td>
+                <td class='data'>{{endereco.descricao}}</td>
+            </tr>  
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href={% url 'endereco-create' %} id='criar_novo' onmousemove="botao_passar(this)" onmouseout="botao_sair(this)">CADASTRAR NOVO CEP</a>
+
+{% endblock content %}

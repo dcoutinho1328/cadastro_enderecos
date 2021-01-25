@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/style.css' %}">
+    <script src = "{% static 'javascript/script.js' %}"></script>
+    <title>Cadastro de CEP</title>
+    
+</head>
+<body>
+    <div id='header'>
+        <h1>Cadastro de CEP</h1>
+    </div>
+
+    {% block content %}{% endblock %}    
+    
+</body>
+</html> 
