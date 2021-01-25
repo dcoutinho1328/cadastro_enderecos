@@ -2,7 +2,7 @@
 Sistema de cadastro de endereços a partir de CEP.
 
 # Pré Requisitos 
-Certifique-se de ter uma versão do python instalada na máquina
+Certifique-se de ter uma versão do python instalada na máquina<\n>
 Certifique-se de ter instalado o framework Django (3.1.5 +) - Instalação: https://www.djangoproject.com/download/
 Certifique-se de que as bibliotecas requests.py e json.py foram instaladas junto ao python
 
